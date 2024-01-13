@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>age Calculater</title>
+    <style>
+        body{
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(198, 156, 238);
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+        }
+        .box1{
+            width: 350px;
+            height: 50px;
+            background-color: rgb(131, 73, 185);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px,
+                          3px 3px 5px rgb(28, 8, 46);
+            
+        }
+        input{
+            width: 200px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+          
+            
+        }
+        button{
+            width: 100px;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            background-color: rgb(47, 13, 78);
+            color: #fff;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Age Calculater</h2>
+        <div class="box1">
+            <input type="date" id="date">
+            <button id="calculate"
+            onclick="calculateage()">Calculate</button>
+        </div>
+        <div class="result"></div>
+    </div>
+
+    <script src="babu.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- function calculateage(){
+    var input=document.getElementById("date").value;
+        var DOB= new Date(input);
+        var month=Date.now() - DOB.getTime()
+        var age=new Date(month);
+        var year=age.getUTCFullYear();
+        var calcage = Math.abs(year - 1970);
+        return document.querySelector(".result").innerHTML ="Calulated Age is: " + calcage + "years."; 
+      
+      } -->
